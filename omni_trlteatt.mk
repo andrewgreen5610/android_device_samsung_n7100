@@ -21,18 +21,18 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/n7100/full_n7100.mk)
+$(call inherit-product, device/samsung/trlteatt/full_trlteatt.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_n7100
-PRODUCT_DEVICE := n7100
+PRODUCT_NAME := omni_trlteatt
+PRODUCT_DEVICE := trlteatt
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_MODEL := GT-N7100
+PRODUCT_MODEL := SM-N910A
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=t03gxx \
-    TARGET_DEVICE=t03g \
-    PRIVATE_BUILD_DESC="t03gxx-user 4.4.2 KOT49H N7100XXUFNI1 release-keys" \
-    BUILD_FINGERPRINT="samsung/t03gxx/t03g:4.4.2/KOT49H/N7100XXUFNI1:user/release-keys"
+    PRODUCT_NAME=trlteatt \
+    TARGET_DEVICE=trlteuc \
+    PRIVATE_BUILD_DESC="trlteuc-user 4.4.2 KOT49H N910AAUCU1ANIE release-keys" \
+    BUILD_FINGERPRINT="samsung/trlteuc/trlteatt:4.4.2/KOT49H/N910AUCU1ANIE:user/release-keys"
